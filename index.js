@@ -1,6 +1,6 @@
 const ExpiringProduct = require('./models/expiringProduct.module');
 const ShippableProduct = require('./models/shippableProduct.module');
-const ScratchCard = require('./models/nonShippableProduct.module');
+const nonShippableProduct = require('./models/nonShippableProduct.module');
 const Customer = require('./models/customer.module');
 const CheckoutService = require('./services/checkoutServices');
 
@@ -13,7 +13,7 @@ const biscuits = new ExpiringProduct('Biscuits', 3.99, 100, '2025-08-20');
 const expiredMilk = new ExpiringProduct('Expired Milk', 2.99, 20, '2022-08-01');
 const tv = new ShippableProduct('Smart TV', 599.99, 10, 15.0);
 const mobile = new ShippableProduct('Mobile Phone', 799.99, 25, 0.5);
-const mobileCard = new ScratchCard('Mobile Scratch Card', 10.0, 500);
+const mobileCard = new nonShippableProduct('Mobile Scratch Card', 10.0, 500);
 
 const customer1 = new Customer('Mohamed Elsayed', 1000.0);
 const customer2 = new Customer('Mohamed Nasser', 50.0);
