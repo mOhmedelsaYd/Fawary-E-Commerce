@@ -6,10 +6,6 @@ class ShippableProduct extends Product {
         this.weight = weight;
     }
 
-    getName() {
-        return this.name;
-    }
-
     getWeight() {
         return this.weight;
     }

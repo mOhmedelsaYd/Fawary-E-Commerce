@@ -1,10 +1,9 @@
 const Product = require('./product.module');
 
-class nonShippableProduct extends Product {
+class NonShippableProduct extends Product {
     constructor(name, price, quantity) {
         super(name, price, quantity);
-        // does not expire or require shipping
     }
 }
 
-module.exports = nonShippableProduct;
+module.exports = NonShippableProduct;

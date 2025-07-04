@@ -9,6 +9,14 @@ class ExpiringProduct extends Product {
     isExpired() {
         return new Date() > this.expiryDate;
     }
+
+    isAvailable(requestedQty) {
+        return super.isAvailable(requestedQty) && !this.isExpired();
+    }
+
+    getExpiryDate() {
+        return this.expiryDate;
+    }
 }
 
 module.exports = ExpiringProduct;
