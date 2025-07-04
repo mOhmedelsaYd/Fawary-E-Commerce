@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ecommerce-app:
+    build: .
+    container_name: ecommerce-node-app
+    volumes:
+      - .:/app
+    command: node index.js
