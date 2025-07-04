@@ -15,9 +15,9 @@ const tv = new ShippableProduct('Smart TV', 599.99, 10, 15.0);
 const mobile = new ShippableProduct('Mobile Phone', 799.99, 25, 0.5);
 const mobileCard = new ScratchCard('Mobile Scratch Card', 10.0, 500);
 
-const customer1 = new Customer('John Doe', 1000.0);
-const customer2 = new Customer('Jane Smith', 50.0);
-const customer3 = new Customer('Bob Wilson', 2000.0);
+const customer1 = new Customer('Mohamed Elsayed', 1000.0);
+const customer2 = new Customer('Mohamed Nasser', 50.0);
+const customer3 = new Customer('Abdallah Gaber', 2000.0);
 
 const runTest = (label, fn) => {
     console.log(`TEST CASE: ${label}`);
@@ -65,7 +65,7 @@ runTest('Large order with shipping', () => {
     checkoutService.checkout(largeOrder);
 });
 
-console.log('\n=== FINAL INVENTORY ===');
+console.log('\n=== INVENTORY ===');
 console.log(`Cheese: ${cheese.quantity}`);
 console.log(`Biscuits: ${biscuits.quantity}`);
 console.log(`TV: ${tv.quantity}`);
